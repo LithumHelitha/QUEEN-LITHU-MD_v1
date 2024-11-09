@@ -1,34 +1,30 @@
 {
-  "name": "QUEEN-ISHU(main)",
-  "description": "LAKSIDU NIMSARA",
-  "logo": "https://i.imgur.com/LTVGRX8.jpeg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "multi device"],
+  "name": "QUEEN-LITHU-MD",
+  "description": "Javascript WhatsApp bot made by LITHUM",
+  "logo": "https://unitedcamps.in/Images/file_5278.jpg",
+  "keywords": ["bot"],
   "success_url": "/",
 
-  "env": 
+  "env": {
     "SESSION_ID": {
-      "description": "Put Your SESSION ID",
-      "required": false
-    
+      "description": "Put the session-id here.",
+      "required": true
+    },  
 
-      "AUTO_READ_STATUS": {
-       "description": "true or false",
-         "required": false
-
-   ,
-
-      "MODE": {
-         "description": "priver/public",
-            "required": false
-
-   
-
+    "GITHUB_AUTH_TOKEN": {
+      "description": "Put your github auth token url..",
+      "required": true
+    },
+    "GITHUB_USERNAME": {
+      "description": "Put your github user name.",
+      "required": true
+    }
+},
 
      "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-      
-    
-  "stack": "heroku-22"
-  
-  
+        }
+     ],
+  "stack": "heroku-24"
+}
